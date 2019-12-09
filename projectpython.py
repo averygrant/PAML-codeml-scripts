@@ -29,7 +29,7 @@ print("Raw dN and dS values for each gene:",'\n', AlldNdS)   #prints list with a
 LineNum = 0      #setting variable to 0
 for Item in AlldNdS:                         #for each line within the AlldNdS list
 	if not LineNum % 2:                  #if the linenumber is not divisible by 2 (aka if it is an odd number)
-		print(Item, ":", sep=' ', end=' ', flush=True)     #print that item in the list, add a colon, and separate and end the line with a space so the next line will be printed out on the same line 
+		print(Item, ":", sep=' ', end=' ')     #print that item in the list, add a colon, and separate and end the line with a space so the next line will be printed out on the same line 
 	else:
 		print(Item)     #if the line is divisible by 2, print line
 	LineNum += 1            #add 1 to LineNum for each line
